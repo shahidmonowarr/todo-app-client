@@ -6,13 +6,13 @@ const List = () => {
     const [todos, setTodos] = useState([]);
     const count = todos.length;
     useEffect(() => {
-        fetch("http://localhost:5000/todos")
+        fetch("https://still-crag-08172.herokuapp.com/todos")
             .then(res => res.json())
             .then(data => setTodos(data))
     }, []);
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/todos/${id}`;
+        const url = `https://still-crag-08172.herokuapp.com/todos/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

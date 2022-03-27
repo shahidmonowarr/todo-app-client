@@ -11,7 +11,7 @@ const Home = () => {
     const onSubmit = data =>{
         console.log(data);
 
-        axios.post('http://localhost:5000/todos', data)
+        axios.post('https://still-crag-08172.herokuapp.com/todos', data)
         .then(res=>{
             console.log(res);
             if(res.data.insertedId){
