@@ -17,10 +17,10 @@ const Home = () => {
             if(res.data.insertedId){
                 alert('Added successfully');
                 reset();
-                
+                window.location.reload();
             }
         });
-        window.location.reload();
+        
     }
 
     return (
