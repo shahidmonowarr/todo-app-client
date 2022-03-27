@@ -1,0 +1,16 @@
+.home{
+    color: #fff;
+    height: 100vh;
+    background: #7F00FF; 
+    background: -webkit-linear-gradient(to right, #240b27, #26113b); 
+    background: linear-gradient(to right, #231425, #300758);
+    padding-top: 40px;
+}
+
+
+    .submit-btn:hover{
+        background-color: rgb(26, 19, 2);
+        color: white;
+        font-weight: 700;
+        transition: 0.5s;
+    }
